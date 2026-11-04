@@ -1,154 +1,105 @@
-/* ===== Základ ===== */
 body {
   font-family: Georgia, serif;
-  font-size: 16px;
+  background-color: #F5EFE5;
   line-height: 1.6;
-  color: #222;
-  background-color: #fdf8f2;
-  margin: 0;
 }
-
-img {
-  max-width: 100%;
+.obrazek1 {
+  float: right;
+  width: 300px;
+  margin: 0 0 20px 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
-
-/* ===== Hlavička a navigace ===== */
 header {
-  background-color: #b5442e;
+  background-color: #3B2921;
   color: white;
   text-align: center;
   padding: 20px;
 }
-
 header h1 {
-  margin: 0;
-  font-size: 32px;
+  font-size: 40px;
 }
-
 nav {
-  background-color: #7a2b1c;
+  background-color: #714b33;
+  text-align: center;
 }
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 nav a {
-  display: block;
-  padding: 14px 24px;
+  display: inline-block;
+  padding: 15px 25px;
   color: white;
   text-decoration: none;
 }
-
-/* hover na odkazech v navigaci */
 nav a:hover {
-  background-color: #e0a458;
-  color: #222;
+  background-color: #b87850;
+  color: #000000;
 }
-
-/* ===== Obsah ===== */
 main {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
 }
-
 h2 {
-  color: #7a2b1c;
-  border-bottom: 2px solid #e0a458;
-  padding-bottom: 6px;
+  color: #714b33;
+  border-bottom: 2px solid #4e573e;
+  padding-bottom: 5px;
 }
-
 a {
-  color: #b5442e;
+  color: #714b33;
 }
-
 a:hover {
-  color: #e0a458;
+  color: #b87850;
   text-decoration: underline;
 }
-
-/* ===== Karty (výhody, zaměstnanci...) ===== */
 .karty {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .karta {
   flex: 1;
   min-width: 250px;
   background-color: white;
   border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
+  border-radius: 10px;
+  padding: 15px;
 }
-
 .karta:hover {
-  border-color: #b5442e;
+  border-color: #714b33;
 }
-
-/* ===== Menu (jídelní lístek) ===== */
 .jidlo {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px dotted #999;
-  padding: 8px 0;
+  border-bottom: 1px solid #714b33;
+  padding: 10px;
 }
-
 .cena {
   font-weight: bold;
 }
-
-/* ===== Galerie ===== */
+img {
+  transition: 0.3s;
+}
+img:hover {
+  transform: scale(1.05);
+}
 .galerie {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 15px;
 }
-
 .galerie img {
   width: 300px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
-
-/* ===== Iframe ===== */
 iframe {
   width: 100%;
   height: 350px;
   border: 2px solid #7a2b1c;
-  border-radius: 8px;
+  border-radius: 10;
 }
-
-/* ===== Footer ===== */
 footer {
-  background-color: #222;
+  background-color: #3B2921;
   color: white;
   text-align: center;
-  padding: 16px;
-  margin-top: 30px;
-}
-
-/* ===== Mobil ===== */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 24px;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav a {
-    text-align: center;
-  }
-
-  .jidlo {
-    flex-direction: column;
-  }
+  padding: 20px;
+  margin-top: 30x;
 }
